@@ -1,3 +1,5 @@
+package year2022;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -73,7 +75,7 @@ public class Challenge5 {
                 for (var i = 0; i < amountMove; i++) {
                     var letter = pileArray[from].substring(0, 1);
                     System.out.println("letter: " + letter);
-                    pileArray[from] = pileArray[from].substring(1, pileArray[from].length());
+                    pileArray[from] = pileArray[from].substring(1);
                     System.out.println("pileArray: " + pileArray[from]);
                     pileArray[to] = letter + pileArray[to];
                     System.out.println("pileArrayNew: " + pileArray[to]);
@@ -82,7 +84,7 @@ public class Challenge5 {
                 //for part 2
                 var letter = pileArray[from].substring(0, amountMove);
                 System.out.println("letter: " + letter);
-                pileArray[from] = pileArray[from].substring(amountMove, pileArray[from].length());
+                pileArray[from] = pileArray[from].substring(amountMove);
                 System.out.println("pileArray: " + pileArray[from]);
                 pileArray[to] = letter + pileArray[to];
                 System.out.println("pileArrayNew: " + pileArray[to]);

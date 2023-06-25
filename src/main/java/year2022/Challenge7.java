@@ -1,3 +1,5 @@
+package year2022;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,7 +21,7 @@ public class Challenge7 {
         }
     }
 
-    private static Tree tree = new Tree();
+    private static final Tree tree = new Tree();
 
     static class Tree {
 
@@ -34,7 +36,7 @@ public class Challenge7 {
         }
     }
     private static Directory currentDir = null;
-    private static HashSet<Directory> directories = new HashSet<>();
+    private static final HashSet<Directory> directories = new HashSet<>();
 
     public static void main(String[] args) throws IOException {
 
