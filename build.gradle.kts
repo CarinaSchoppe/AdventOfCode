@@ -7,7 +7,7 @@ plugins {
 }
 
 version = "1.0.0"
-description = "Advent of Code 2022"
+description = "Advent of Code"
 
 
 
@@ -37,12 +37,8 @@ processResources {
 }
 withType<KotlinCompile> {
     kotlinOptions {
-        freeCompilerArgs = listOf(
-            "-Xuse-k2",
-            "-Xjdk-release=19"
-        )
         jvmTarget = "19"
-        languageVersion = "1.8"
+        languageVersion = "2.0"
     }
 }
 test {
