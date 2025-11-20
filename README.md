@@ -16,4 +16,4 @@
 
 #### Python
 
-- [Advent of Code 2024](python/AdventOfCode2024.ipynb)
+- [Advent of Code 2024](2024/AdventOfCode2024.ipynb)
